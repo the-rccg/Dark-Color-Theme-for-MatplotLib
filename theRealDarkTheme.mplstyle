@@ -1,25 +1,43 @@
 # by RCCG
 
+backend.qt5 : PyQt5
+
 ## Colors
+
 # Face colors
-figure.facecolor:  black
-safefig.facecolor: black
-patch.facecolor:   348ABD  # Blue
-axes.facecolor:    E5E5E5  # Light Grey
+figure.facecolor :  black
+savefig.facecolor : black
+patch.facecolor :   348ABD  # Blue
+axes.facecolor :    black
+
 # Edge colors
-figure.edgecolor:  black
-safefig.edgecolor: black
-patch.edgecolor:   EEEEEE  # Darker Grey
-axes.edgecolor:    E5E5E5  # Light Grey
+figure.edgecolor :  black
+savefig.edgecolor : black
+patch.edgecolor :   EEEEEE  # Darkish Grey
+axes.edgecolor :    333333  # Darker Grey
+
+# Text Color
+text.color:        E5E5E5  # Light Grey
+
 # Axes color
-xtick.color:       555555  # Darker Grey
-ytick.color:       555555  # Darker Grey
+xtick.color:       555555  # Dark Grey
+ytick.color:       555555  # Dark Grey
+
 # Grid colors
-grid.color:        555555  # Darker Grey
+grid.color:        E5E5E5  # Light Grey
+
 # Label colors
 axes.labelcolor:   E5E5E5  # Light Grey
+
+# Legend
+legend.frameon:       True
+legend.fontsize:      10
+legend.numpoints:     1
+legend.scatterpoints: 1
+legend.facecolor:     111111
+
 # Line colors
-line.color:        E5E5E5  # Light Grey
+lines.color:        333333  # Light Grey
 axes.prop_cycle: cycler('color', ['1f77b4','ff7f0e','2ca02c','d62728','9467bd','e377c2','7f7f7f','bccd22','17becf'])
 		# Vega
 		# 1f77b4 : blue
@@ -44,11 +62,17 @@ axes.prop_cycle: cycler('color', ['1f77b4','ff7f0e','2ca02c','d62728','9467bd','
                    #        : orange
 
 # Text sizes
-font.size: 10.0
-axes.titlesize : 24
-axes.labelsize : 20
-xtick.labelsize : 16
-ytick.labelsize : 16
+figure.titlesize: xx-large
+axes.titlesize:   large
+axes.labelsize:   large
+font.size:        10
+xtick.labelsize:  medium
+xtick.minor.visible: True
+ytick.labelsize:  medium
+ytick.minor.visible: True
+
+
+date.autoformatter.minute   : %d %H:%M
 
 # Line sizes
 lines.linewidth : 3
@@ -64,8 +88,14 @@ axes.grid: True
 axes.axisbelow: True       # grid/ticks are below elements (e.g., lines, text)
 xtick.direction: out
 ytick.direction: out
+#ytick.positon: right
 
 # Styling
 grid.linestyle:    :  # dotted: :    # solid line: -
 grid.linewidth:    0.5
 errorbar.capsize : 3  # Recover end error bar caps
+
+# Fonts
+#mathtext.fontset : stix
+#font.family: serif
+#font.serif: Times New Roman
